@@ -6,10 +6,8 @@ COPY package.json
 
 RUN yarn
 
-COPY ..
+COPY . .
 
 RUN yarn build
-
-RUN yarn start
 
 CMD ["yarn", "start"]
